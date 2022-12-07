@@ -1,0 +1,182 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "lucky block--by jude/rev", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Script stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+getgenv().GetMiddleblocks = true;
+
+
+Tab:AddToggle({
+	Name = "Auto get blocks from middle",
+	Default = (bool),
+	Callback = function(bool)
+		getgenv().GetMiddleblocks = bool
+		print(bool)
+		if bool then
+		autogetmiddle()
+		end
+	end    
+    
+})
+
+Tab:AddButton({
+	Name = "Get blocks from middle",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").CenterBlocks.Givers:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+end
+})
+
+
+Tab:AddButton({
+	Name = "get blocks from 7th",
+	Callback = function()
+      			for _,v in pairs(game:GetService("Workspace").Spawn7:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Get blocks from 6th",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn6:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Get blocks from 8th",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn8:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+
+
+Tab:AddButton({
+	Name = "Get blocks from 5th",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn5:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "Get blocks from 4th",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn4:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Get blocks from 3rd",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn3:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Get blocks from 2nd",
+	Callback = function()
+      	for _,v in pairs(game:GetService("Workspace").Spawn2:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Get blocks from 1st",
+	Callback = function()
+      		for _,v in pairs(game:GetService("Workspace").Spawn1:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+  	end    
+})
+
+
+
+
+
+
+
+function autogetmiddle()
+    while getgenv().GetMiddleblocks == true do
+        for _,v in pairs(game:GetService("Workspace").CenterBlocks.Givers:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+end
+end
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+
+
