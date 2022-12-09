@@ -14,7 +14,7 @@ local Tab = Window:MakeTab({
 getgenv().GetMiddleblocks = true;
 getgenv().TeleportBase = true;
 getgenv().AutoFarm = true;
-
+getgenv().Lag = true;
 Tab:AddToggle({
 	Name = "Auto get blocks from middle",
 	Default = (bool),
@@ -430,6 +430,21 @@ AutoFarm()
     end
     
 })
+
+
+Tab:AddToggle({
+    Name = "Spam lag server",
+    Default = (bool),
+    Callback = function(bool)
+        getgenv().Lag = bool
+        print(bool)
+		if bool then
+Lag()
+    end    
+    end
+    
+})
+
 function autogetmiddle()
     while getgenv().GetMiddleblocks == true do
         for _,v in pairs(game:GetService("Workspace").CenterBlocks.Givers:GetDescendants()) do
@@ -622,5 +637,341 @@ while getgenv().AutoFarm == true do
 game:GetService("Players").LocalPlayer.Character.LockonLauncher.Remote:FireServer(unpack(args))
 wait()
     
+end
+end
+
+function Lag()
+while getgenv().Lag == true do
+          	game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+          	wait(5)
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+
+wait(1)
+OrionLib:MakeNotification({
+	Name = "How to use",
+	Content = "Just run into people with this weapon/weapons",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1038.72986, 193.799942, 101.541183, 0.659579813, 1.60763811e-08, 0.751634538, 1.48655293e-08, 1, -3.44334694e-08, -0.751634538, 3.38850654e-08, 0.659579813)
+wait()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(3)
 end
 end
